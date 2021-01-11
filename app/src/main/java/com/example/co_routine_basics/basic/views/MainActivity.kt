@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             }
             viewmodel.result.observe(this) {
                 text_result.isVisible = true
-                loading.isVisible = false
                 text_result.text = it
             }
         }
