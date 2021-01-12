@@ -1,12 +1,12 @@
 package com.example.co_routine_basics.basic.repo
 
-import android.util.Log
+import androidx.annotation.VisibleForTesting
 import com.example.co_routine_basics.basic.service.PokemonService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlin.coroutines.CoroutineContext
 
-class BasicRepo internal constructor(
+class BasicRepo @VisibleForTesting internal constructor(
     private val dispatcher: CoroutineContext,
     private val pokemonService: PokemonService
 ) {
